@@ -1,0 +1,25 @@
+# Node.js / React
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Python / FastAPI
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+ENV/
+
+# IDE / System
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+scratch/
+
+# Environment files
+.env
+.env.local

@@ -1,0 +1,86 @@
+================================================================================
+SMART HEALTH MONITORING - USER ACCOUNTS DATABASE
+Generated: 2026-08-27 19:07:00
+Database: D:\game\project3\backend_py\smarthealth.db
+================================================================================
+
+--------------------------------------------------------------------------------
+ID:           1
+Username:     umer
+Password:     ••••••••
+Role:         DOCTOR
+Full Name:    umer sofi
+Email:        umer@gmail.com
+Age:          21
+Gender:       M
+
+--------------------------------------------------------------------------------
+ID:           2
+Username:     rsyees
+Password:     ••••••••••
+Role:         PATIENT
+Patient ID:   P958145
+Full Name:    rayees dar
+Email:        rayees@gmail.com
+Age:          17
+Gender:       M
+
+--------------------------------------------------------------------------------
+ID:           3
+Username:     shakir
+Password:     ••••••••••
+Role:         PATIENT
+Patient ID:   P093388
+Full Name:    shakir bhat
+Email:        shakir@gmail.com
+Age:          21
+Gender:       M
+
+--------------------------------------------------------------------------------
+ID:           4
+Username:     test
+Password:     ••••
+Role:         PATIENT
+Patient ID:   P021898
+
+--------------------------------------------------------------------------------
+ID:           5
+Username:     gauravv18
+Password:     ••••••
+Role:         PATIENT
+Patient ID:   P081181
+Full Name:    Gaurav Kumar Verma
+Email:        gkvfx100@gmail.com
+Age:          20
+Gender:       M
+
+--------------------------------------------------------------------------------
+ID:           6
+Username:     umer18
+Password:     ••••
+Role:         DOCTOR
+Full Name:    Umer Bashir Sofi
+Email:        umer@gmail.com
+Age:          20
+Gender:       M
+
+--------------------------------------------------------------------------------
+ID:           7
+Username:     gkv
+Password:     ••••
+Role:         PATIENT
+Patient ID:   P228372
+Full Name:    Gaurav Verma
+Email:        gaurav@gmail.com
+Age:          21
+Gender:       M
+
+--------------------------------------------------------------------------------
+ID:           8
+Username:     g
+Password:     •••••
+Role:         DOCTOR
+Full Name:    GKV
+Email:        gg@gmail.com
+Age:          35
+Gender:       M
