@@ -3,6 +3,7 @@ services:
   - type: web
     name: smart-health-backend
     env: python
+    plan: free
     rootDir: backend_py
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
@@ -14,6 +15,7 @@ services:
   - type: web
     name: smart-health-frontend
     env: static
+    plan: free
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
