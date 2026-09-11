@@ -11,8 +11,9 @@ services:
         value: 3.11.0
 
   # Frontend Vite React Static Site
-  - type: static
+  - type: web
     name: smart-health-frontend
+    env: static
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
