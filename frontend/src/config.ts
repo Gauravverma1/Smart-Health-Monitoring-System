@@ -1,1 +1,4 @@
-export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+const rawUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+export const API_BASE_URL = rawUrl.startsWith('http://') || rawUrl.startsWith('https://') 
+  ? rawUrl 
+  : `https://${rawUrl}`;

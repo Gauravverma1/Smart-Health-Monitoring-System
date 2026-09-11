@@ -26,4 +26,4 @@ services:
         fromService:
           type: web
           name: smart-health-backend
-          property: url
+          property: host
