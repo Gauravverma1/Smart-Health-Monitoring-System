@@ -46,6 +46,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+def root():
+    return {"status": "ok", "message": "Smart Health Monitoring API is running", "docs": "/docs"}
+
 # Database setup
 class Base(DeclarativeBase):
     pass
