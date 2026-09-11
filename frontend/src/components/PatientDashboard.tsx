@@ -4,10 +4,11 @@ import FloatingChatBot from './FloatingChatBot';
 import HealthInsights from './HealthInsights';
 import HealthReport from './HealthReport';
 import PredictiveTrends from './PredictiveTrends';
+import { API_BASE_URL } from '../config';
 
 type Reading = { timestamp: number; heartRate: number; spo2: number; temperature: number; risk?: string };
 type Alert = { id: number; level: string; message: string; createdAt: number; acknowledged: boolean };
-const API = 'http://localhost:8000/api/v1';
+const API = `${API_BASE_URL}/api/v1`;
 
 const fmtTime = (d: number) => new Date(d).toLocaleTimeString();
 

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { API_BASE_URL } from '../config';
 
 interface UserAccount {
   id: number;
@@ -37,8 +38,8 @@ export const AdminDatabaseModal: React.FC<AdminDatabaseModalProps> = ({ isOpen, 
     const headers: Record<string, string> = token ? { Authorization: `Bearer ${token}` } : {};
     try {
       const [usersRes, statsRes] = await Promise.all([
-        fetch('http://localhost:8000/api/admin/users', { headers }),
-        fetch('http://localhost:8000/api/admin/stats', { headers })
+        fetch(`${API_BASE_URL}/api/admin/users`, { headers }),
+        fetch(`${API_BASE_URL}/api/admin/stats`, { headers })
       ]);
 
       if (usersRes.ok && statsRes.ok) {

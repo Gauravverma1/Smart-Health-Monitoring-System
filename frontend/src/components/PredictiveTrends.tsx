@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer, Area, AreaChart } from 'recharts';
+import { API_BASE_URL } from '../config';
 
 type Prediction = {
   timestamp: number;
@@ -56,7 +57,7 @@ const PredictiveTrends: React.FC<{ patientId: string; token: string; history: Ar
     setPredictionData(null);
     
     try {
-      const url = `http://localhost:8000/api/v1/predict/${patientId}?hours=${hours}`;
+      const url = `${API_BASE_URL}/api/v1/predict/${patientId}?hours=${hours}`;
       console.log('Fetching from:', url);
       
       const res = await fetch(url, {

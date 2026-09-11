@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { API_BASE_URL } from '../config';
 
 type Insight = {
   type: 'positive' | 'warning' | 'critical';
@@ -32,7 +33,7 @@ const HealthInsights: React.FC<{ patientId: string; token: string }> = ({ patien
   const fetchInsights = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`http://localhost:8000/api/v1/insights/${patientId}?period=${period}`, {
+      const res = await fetch(`${API_BASE_URL}/api/v1/insights/${patientId}?period=${period}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       if (res.ok) {

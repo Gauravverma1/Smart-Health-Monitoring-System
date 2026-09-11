@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { API_BASE_URL } from '../config';
 
 type ReportData = {
   patient: {
@@ -50,7 +51,7 @@ const HealthReport: React.FC<{ patientId: string; token: string }> = ({ patientI
   const fetchReportData = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`http://localhost:8000/api/v1/report/${patientId}`, {
+      const res = await fetch(`${API_BASE_URL}/api/v1/report/${patientId}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       if (res.ok) {

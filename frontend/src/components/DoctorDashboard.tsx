@@ -1,7 +1,7 @@
-
 import React, { useEffect, useState } from 'react';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-const API = 'http://localhost:8000/api/v1';
+import { API_BASE_URL } from '../config';
+const API = `${API_BASE_URL}/api/v1`;
 
 type PatientSummary = { id: string; name: string; risk: string; latestAt: number };
 type Reading = { timestamp: number; heartRate: number; spo2: number; temperature: number; risk?: string };
